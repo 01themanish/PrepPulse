@@ -10,6 +10,7 @@ import QuestionNavigation from './components/QuestionNavigation';
 import SubmitConfirmationModal from './components/SubmitConfirmationModal';
 import ResultSummary from './components/ResultSummary';
 import QuestionReview from './components/QuestionReview';
+import Footer from './components/Footer';
 import { useTestTimer } from './hooks/useTestTimer';
 import { calculateResults } from './utils/calculateResults';
 
@@ -420,18 +421,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="w-full border-t border-slate-200 dark:border-slate-800 py-6 text-center text-xs text-slate-500 dark:text-slate-400 no-print">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="flex items-center space-x-2">
-            <span className="font-bold text-slate-700 dark:text-slate-300">PrepPulse MCQ Platform</span>
-            <span>•</span>
-            <span>Frontend Single Page Application</span>
-          </div>
-          <div>
-            <span>Pure React + Tailwind CSS • Configurable Negative Marking • AI-Ready Schema</span>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       {/* AI Prompt Modal */}
       <PromptGeneratorModal
